@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D32A534C2A8D5A3200101AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A534B2A8D5A3200101AFD /* AppDelegate.swift */; };
+		D32A534E2A8D5A3200101AFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A534D2A8D5A3200101AFD /* SceneDelegate.swift */; };
+		D32A53502A8D5A3200101AFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A534F2A8D5A3200101AFD /* ViewController.swift */; };
+		D32A53532A8D5A3200101AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32A53512A8D5A3200101AFD /* Main.storyboard */; };
+		D32A53552A8D5A3400101AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32A53542A8D5A3400101AFD /* Assets.xcassets */; };
+		D32A53582A8D5A3400101AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32A53562A8D5A3400101AFD /* LaunchScreen.storyboard */; };
+		D32A53612A8D67DB00101AFD /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32A53602A8D67DB00101AFD /* ARKit.framework */; };
+		D32A53632A8D69A200101AFD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32A53622A8D69A200101AFD /* AVFoundation.framework */; };
+		D37BC8F22A8FD81A00654595 /* MustacheViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BC8F02A8FD81A00654595 /* MustacheViewCell.swift */; };
+		D37BC8F32A8FD81A00654595 /* MustacheViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37BC8F12A8FD81A00654595 /* MustacheViewCell.xib */; };
+		D37BC8F62A90EE7100654595 /* VideosLib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D37BC8F42A90EE7100654595 /* VideosLib.xcdatamodeld */; };
+		D37BC90D2A91150100654595 /* VideoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BC90B2A91150100654595 /* VideoListVC.swift */; };
+		D37BC9152A91181000654595 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BC9132A91181000654595 /* VideoCell.swift */; };
+		D37BC9162A91181000654595 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37BC9142A91181000654595 /* VideoCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D32A53482A8D5A3200101AFD /* MustacheFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MustacheFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32A534B2A8D5A3200101AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D32A534D2A8D5A3200101AFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D32A534F2A8D5A3200101AFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D32A53522A8D5A3200101AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D32A53542A8D5A3400101AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D32A53572A8D5A3400101AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D32A53592A8D5A3400101AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32A53602A8D67DB00101AFD /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		D32A53622A8D69A200101AFD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D37BC8F02A8FD81A00654595 /* MustacheViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustacheViewCell.swift; sourceTree = "<group>"; };
+		D37BC8F12A8FD81A00654595 /* MustacheViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MustacheViewCell.xib; sourceTree = "<group>"; };
+		D37BC8F52A90EE7100654595 /* VideosLib.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VideosLib.xcdatamodel; sourceTree = "<group>"; };
+		D37BC90B2A91150100654595 /* VideoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListVC.swift; sourceTree = "<group>"; };
+		D37BC9132A91181000654595 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		D37BC9142A91181000654595 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D32A53452A8D5A3200101AFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32A53632A8D69A200101AFD /* AVFoundation.framework in Frameworks */,
+				D32A53612A8D67DB00101AFD /* ARKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D32A533F2A8D5A3200101AFD = {
+			isa = PBXGroup;
+			children = (
+				D32A534A2A8D5A3200101AFD /* MustacheFace */,
+				D32A53492A8D5A3200101AFD /* Products */,
+				D32A535F2A8D67DA00101AFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D32A53492A8D5A3200101AFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D32A53482A8D5A3200101AFD /* MustacheFace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D32A534A2A8D5A3200101AFD /* MustacheFace */ = {
+			isa = PBXGroup;
+			children = (
+				D32A534B2A8D5A3200101AFD /* AppDelegate.swift */,
+				D32A534D2A8D5A3200101AFD /* SceneDelegate.swift */,
+				D32A534F2A8D5A3200101AFD /* ViewController.swift */,
+				D37BC90B2A91150100654595 /* VideoListVC.swift */,
+				D37BC8F42A90EE7100654595 /* VideosLib.xcdatamodeld */,
+				D32A53512A8D5A3200101AFD /* Main.storyboard */,
+				D32A53542A8D5A3400101AFD /* Assets.xcassets */,
+				D32A53562A8D5A3400101AFD /* LaunchScreen.storyboard */,
+				D32A53592A8D5A3400101AFD /* Info.plist */,
+				D37BC8F02A8FD81A00654595 /* MustacheViewCell.swift */,
+				D37BC8F12A8FD81A00654595 /* MustacheViewCell.xib */,
+				D37BC9132A91181000654595 /* VideoCell.swift */,
+				D37BC9142A91181000654595 /* VideoCell.xib */,
+			);
+			path = MustacheFace;
+			sourceTree = "<group>";
+		};
+		D32A535F2A8D67DA00101AFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D32A53622A8D69A200101AFD /* AVFoundation.framework */,
+				D32A53602A8D67DB00101AFD /* ARKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D32A53472A8D5A3200101AFD /* MustacheFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32A535C2A8D5A3400101AFD /* Build configuration list for PBXNativeTarget "MustacheFace" */;
+			buildPhases = (
+				D32A53442A8D5A3200101AFD /* Sources */,
+				D32A53452A8D5A3200101AFD /* Frameworks */,
+				D32A53462A8D5A3200101AFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MustacheFace;
+			productName = MustacheFace;
+			productReference = D32A53482A8D5A3200101AFD /* MustacheFace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D32A53402A8D5A3200101AFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D32A53472A8D5A3200101AFD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D32A53432A8D5A3200101AFD /* Build configuration list for PBXProject "MustacheFace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D32A533F2A8D5A3200101AFD;
+			productRefGroup = D32A53492A8D5A3200101AFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D32A53472A8D5A3200101AFD /* MustacheFace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D32A53462A8D5A3200101AFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37BC9162A91181000654595 /* VideoCell.xib in Resources */,
+				D32A53582A8D5A3400101AFD /* LaunchScreen.storyboard in Resources */,
+				D32A53552A8D5A3400101AFD /* Assets.xcassets in Resources */,
+				D37BC8F32A8FD81A00654595 /* MustacheViewCell.xib in Resources */,
+				D32A53532A8D5A3200101AFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D32A53442A8D5A3200101AFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37BC90D2A91150100654595 /* VideoListVC.swift in Sources */,
+				D37BC9152A91181000654595 /* VideoCell.swift in Sources */,
+				D37BC8F62A90EE7100654595 /* VideosLib.xcdatamodeld in Sources */,
+				D32A53502A8D5A3200101AFD /* ViewController.swift in Sources */,
+				D32A534C2A8D5A3200101AFD /* AppDelegate.swift in Sources */,
+				D37BC8F22A8FD81A00654595 /* MustacheViewCell.swift in Sources */,
+				D32A534E2A8D5A3200101AFD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D32A53512A8D5A3200101AFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D32A53522A8D5A3200101AFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D32A53562A8D5A3400101AFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D32A53572A8D5A3400101AFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D32A535A2A8D5A3400101AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D32A535B2A8D5A3400101AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D32A535D2A8D5A3400101AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 528US555T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MustacheFace/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to capture video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to capture audio";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyc0825.MustacheFace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D32A535E2A8D5A3400101AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 528US555T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MustacheFace/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to capture video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to capture audio";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyc0825.MustacheFace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D32A53432A8D5A3200101AFD /* Build configuration list for PBXProject "MustacheFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32A535A2A8D5A3400101AFD /* Debug */,
+				D32A535B2A8D5A3400101AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32A535C2A8D5A3400101AFD /* Build configuration list for PBXNativeTarget "MustacheFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32A535D2A8D5A3400101AFD /* Debug */,
+				D32A535E2A8D5A3400101AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D37BC8F42A90EE7100654595 /* VideosLib.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D37BC8F52A90EE7100654595 /* VideosLib.xcdatamodel */,
+			);
+			currentVersion = D37BC8F52A90EE7100654595 /* VideosLib.xcdatamodel */;
+			path = VideosLib.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D32A53402A8D5A3200101AFD /* Project object */;
+}
